@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -38,6 +39,16 @@
             <li class="link-text"><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button class="open-mobile-menu-btn">
+          <svg
+            class="open-mobile-menu-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
         <address class="address-text">
           <ul class="header-link">
             <li class="address-link">
@@ -55,13 +66,17 @@
       </div>
     </header>
     <main>
-      <section class="section hero">
+      <!---HERO-->
+
+      <!-- <section class="section hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
-      </section>
-      <section class="section page-heading">
+      </section> -->
+
+      <!--Page-heading-->
+      <!-- <section class="section page-heading">
         <div class="container heading">
           <h2 class="visually-hidden">Heading2</h2>
           <ul class="menu">
@@ -115,8 +130,10 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section page-team">
+      </section> -->
+
+      <!--page-team-->
+      <!-- <section class="section page-team">
         <div class="container team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-heading">
@@ -290,8 +307,10 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section page-portfolio">
+      </section> -->
+
+      <!--page-portfolio-->
+      <!-- <section class="section page-portfolio">
         <div class="container portfolio">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-heading">
@@ -411,9 +430,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="basement">
+
+    <!--Footer-->
+    <!-- <footer class="basement">
       <div class="container footer">
         <div class="footer-paragraf">
           <a href="./index.html" class="logo basement-link"
@@ -477,10 +498,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!--Modalne wikno--><!-----BACKDROP----->
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg
@@ -589,6 +610,77 @@
           <button class="button-modal" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <!--Mobile menu-->
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn">
+        <svg
+          class="mobile-menu-close-icon"
+          width="8"
+          height="8"
+          aria-label="mobile menu close icon"
+        >
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="menu-navigational">
+          <li class="mobile-menu-list list">
+            <a class="list-mobile" href="">Studio</a>
+          </li>
+          <li class="mobile-menu-list list">
+            <a class="list-mobile" href="">Portfolio</a>
+          </li>
+          <li class="mobile-menu-list list">
+            <a class="list-mobile" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address-text">
+        <ul class="menu-address-link">
+          <li class="address-link list">
+            <a href="mailto:info@devstudio.com" class="address-contakt"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="address-link list">
+            <a href="tel:+110001111111" class="address-contakt"
+              >+11 (000) 111-11-11
+            </a>
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-icon-menu">
+        <li class="mobile-icon-link">
+          <a href="#" class="svg-list-mobile">
+            <svg class="mobile-icon-svg" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-icon-link">
+          <a href="#" class="svg-list-mobile">
+            <svg class="mobile-icon-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-icon-link">
+          <a href="#" class="svg-list-mobile">
+            <svg class="mobile-icon-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-icon-link">
+          <a href="#" class="svg-list-mobile">
+            <svg class="mobile-icon-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
