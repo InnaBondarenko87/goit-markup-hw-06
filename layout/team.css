@@ -88,17 +88,37 @@
     
 }
 
+@media screen and (min-width:768px) {
+
+    .team-link {
+        width: calc((100% - 48px) / 2);
+    }
+
+    .menu-team {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width:1158px) {
+    .menu-team {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+        flex-wrap: nowrap;
+    }
+}
 
 
 /* .page-team {
     background-color: #F4F4FD;
 }
 
-.team-heading {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 0;
-}
+
 
 .team-title-heading {
     color:var(--navy-color);
