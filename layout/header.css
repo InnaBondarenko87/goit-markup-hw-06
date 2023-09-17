@@ -1,7 +1,7 @@
 /* 0-767px */
 
 @media screen and (max-width:767px) {
-   .nav-text{
+    .nav-text{
         display: none;
     }
 

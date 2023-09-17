@@ -25,7 +25,7 @@ ol {
 
 img {
     display: block;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 button {
