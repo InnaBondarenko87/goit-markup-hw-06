@@ -157,11 +157,6 @@
     }
 }
 
-.header-page-container{
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
 .page-logo {
     color:var(--accent-color);
     text-transform: uppercase;
@@ -254,6 +249,7 @@ a {
     left: 0;
     bottom: 0;
     bottom: -1px;
+    top: 44px;
     /* margin-top: 20px; */
 }
     
