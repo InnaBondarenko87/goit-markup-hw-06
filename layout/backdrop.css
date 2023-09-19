@@ -1,8 +1,4 @@
-
-
-  /* /----BACKDROP----/ */
-
-/* .backdrop{
+.backdrop {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     width: 100%;
@@ -15,25 +11,19 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    }
+}
 
 .is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-} */
+}
 
-  /* /----BACKDROP----/ */
-
-
-    /* <Modalne wikno> */
-
-    
-/* .modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%, -50%)scale(1);
+    transform: translate(-50%, -50%)scale(1);
     width: 408px;
     min-height: 584px;
     background: #fcfcfc;
@@ -44,7 +34,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -62,11 +52,13 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.close-icon{
+
+.close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-.form-title{
-    color: #2E2F42;
+}
+
+.form-title {
+    color: var(--navy-color);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -75,26 +67,15 @@
     letter-spacing: 0.02em;
 }
 
-.modal-close:hover,
-.modal-close:focus{
-    background-color: #404bbf;
-    border: none;
-}
-
-.modal-close:hover .close-icon,
-.modal-close:focus .close-icon{
-    fill: #FFFFFF;
-} 
-
-.form-hero{
+.form-hero {
     position: relative;
     width: 100%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     margin-bottom: 8px;
 }
 
-.input-hero{
+.input-hero {
     width: 100%;
     height: 40px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,33 +83,28 @@
     padding-left: 38px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    outline:transparent;
+    outline: transparent;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-hero:focus {
-    fill: #FFFFFF;
-    border-color: #4D5AE5;
-}
-
-.svg-form{
+.svg-form {
     position: absolute;
     bottom: 11px;
     left: 16px;
-    fill:#2E2F42;
-    top:50%;
+    fill: var(--navy-color);
+    top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-hero:focus+.svg-form{
+.input-hero:focus+.svg-form {
     fill: #4D5AE5;
 }
 
-.comment{
+.comment {
     display: block;
-    width: 100%; 
+    width: 100%;
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -149,60 +125,27 @@
     background-color: transparent;
 }
 
-.comment:focus {
-    fill: #FFFFFF;
-    border: 1px solid #4D5AE5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.comment::placeholder{
+.comment::placeholder {
     color: rgba(46, 47, 66, 0.40);
 }
 
-.accept{
-    display: block;
-    color: var(--LIGHT-SLATE, #8E8F99);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-}
-
-.form-hero-input{
+.form-hero-input {
     position: relative;
 }
 
-.form-checkbox{
-    margin-bottom: 24px;
-}
-
-.form-hero-comment{
-    margin-bottom: 16px;
-}
-
-.form-label-hero{
-    display: block;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-}
-
-.button-modal{
+.button-modal {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    min-width: 169px; 
-    height: 56px; 
+    min-width: 169px;
+    height: 56px;
     padding: 16px 32px;
-    align-items:center;
+    align-items: center;
     gap: 10px;
     border-radius: 2px;
-    background: var(--IRIS, #4D5AE5);
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--WHITE, #FFF);
+    color:var(--background);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -212,20 +155,36 @@
     cursor: pointer;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-.button-modal:hover,
-.button-modal:focus {
-    background-color:var(--secondary-color);
 }
 
-.accept-checkbox:checked + .accept > .review-form-own-checkbox{
-    background-color:#404bbf;
-    border: none;
-    fill:#F4F4FD;
+.accept {
+    
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
-.review-form-own-checkbox{
+.form-checkbox {
+    margin-bottom: 24px;
+}
+
+.form-hero-comment {
+    margin-bottom: 16px;
+}
+
+.form-label-hero {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.review-form-own-checkbox {
     display: inline-flex;
     margin-right: 8px;
     justify-content: center;
@@ -235,14 +194,108 @@
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
-    fill: transparent; 
+    fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-policy-link {
-    color: #4D5AE5;
+    color:var(--accent-color);
     text-decoration: underline;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
+    font-size: 12px;
+    font-weight: 400;
 }
- */
+
+
+@media screen and (max-width:320px) {
+    .backdrop {
+        max-width: 320px;
+    }
+
+    .modal {
+        max-width: 288px;
+        width: 100%;
+        padding: 72px 16px 24px 16px;
+    }
+
+    .form-title {
+        max-width: 256px;
+
+    }
+
+    .page-form {
+        width: 255px;
+    }
+
+    .accept{
+        width: 231px;
+    }
+    
+}
+
+
+@media screen and (min-width:768px) {
+    .backdrop {
+        min-width: 768px;
+    }
+
+    .modal {
+        max-width: 408px;
+        width: 100%;
+    }
+
+    .page-form{
+        width: 360px;
+    }
+
+    .accept{
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:1158px) {
+    .backdrop {
+        min-width: 1158px;
+    }
+    
+    .modal-close:hover,
+    .modal-close:focus {
+        background-color: #404bbf;
+        border: none;
+    }
+
+.modal-close:hover .close-icon,
+.modal-close:focus .close-icon {
+    fill: #FFFFFF;
+}
+
+.input-hero:focus {
+    fill: #FFFFFF;
+    border-color: #4D5AE5;
+}
+
+.comment:focus {
+    fill: #FFFFFF;
+    border: 1px solid #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover,
+.button-modal:focus {
+    background-color: var(--secondary-color);
+}
+
+.accept-checkbox:checked+.accept>.review-form-own-checkbox {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+}
+
+
+
+
+
