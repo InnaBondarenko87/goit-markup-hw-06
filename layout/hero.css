@@ -6,6 +6,8 @@
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title{
@@ -70,7 +72,7 @@
         padding: 112px 0;
         background-image:linear-gradient(rgba(46, 47, 66, 0.7),
 rgba(46, 47, 66, 0.7)), url('../images/retina/dark_tablet.jpg');
-    }t
+    }
 
     .hero-title{     
         font-size: 56px;

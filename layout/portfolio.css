@@ -67,20 +67,16 @@
     border-top: none;
 }
 
+@media screen and (max-width:767px) {
+
+    .portfolio-link {
+        margin-bottom: 48px;
+        
+    }
+}
+
 @media screen and (min-width:768px) {
 
-    /* .team-link {
-        width: calc((100% - 48px) / 2);
-    }
-
-    .menu-team {
-        flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 64px;
-        column-gap: 24px;
-        display: flex;
-        justify-content: center;
-    } */
     .portfolio-link {
         margin-bottom: 72px;
         width: calc((100% - 48px) / 2);
@@ -93,13 +89,7 @@
 }
 
 @media screen and (min-width:1158px) {
-    /* .menu-team {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 0;
-        flex-wrap: nowrap;
-    } */
-
+  
     .portfolio-link {
         margin-bottom: 48px;
         width: calc((100% - 48px) / 3);
