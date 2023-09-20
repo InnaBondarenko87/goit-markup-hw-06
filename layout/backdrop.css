@@ -158,7 +158,8 @@
 }
 
 .accept {
-    display: block;
+    display: flex;
+    align-items: center;
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     font-style: normal;
@@ -166,7 +167,20 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
-
+.review-form-own-checkbox {
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .form-checkbox {
     margin-bottom: 24px;
 }
@@ -184,19 +198,7 @@
     color: #8e8f99;
 }
 
-.review-form-own-checkbox {
-    display: inline-flex;
-    margin-right: 8px;
-    justify-content: center;
-    align-items: center;
-    height: 16px;
-    width: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    cursor: pointer;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .privacy-policy-link {
     color:var(--accent-color);
@@ -227,9 +229,9 @@
         width: 255px;
     }
 
-    .accept{
+    /* .accept{
         min-width: 256px;
-    }
+    } */
 }
 
 
